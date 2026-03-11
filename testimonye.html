@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Testimonial Section</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      background: #111;
+      color: white;
+      font-size: 26px;
+    }
+
+    .testimonial-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .testimonial-container {
+      display: flex;
+      flex-wrap: wrap; /* IMPORTANT PROPERTY */
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .testimonial-card {
+      background: white;
+      width: 30%;
+      min-width: 280px;
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      transition: 0.3s;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .testimonial-card p {
+      color: #444;
+      line-height: 1.6;
+      font-size: 15px;
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+      margin-top: 15px;
+      gap: 12px;
+    }
+
+    .user-info img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .user-info h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .user-info span {
+      font-size: 14px;
+      color: gray;
+    }
+
+    .stars {
+      margin-top: 10px;
+      font-size: 18px;
+      color: gold;
+    }
+
+    /* Mobile view: 1 card per row */
+    @media (max-width: 600px) {
+      .testimonial-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>⭐ User Testimonials</h1>
+
+  <div class="testimonial-section">
+    <div class="testimonial-container">
+
+      <!-- Card 1 -->
+      <div class="testimonial-card">
+        <p>
+          "This platform is amazing! The UI is smooth and the experience is very user-friendly.
+          Highly recommended for beginners."
+        </p>
+
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+
+        <div class="user-info">
+          <img src="https://picsum.photos/100?random=1" alt="User 1">
+          <div>
+            <h3>Aarav Sharma</h3>
+            <span>Web Developer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="testimonial-card">
+        <p>
+          "I loved the dashboard design. It looks modern and works perfectly on mobile.
+          Customer support is also very responsive."
+        </p>
+
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+
+        <div class="user-info">
+          <img src="https://picsum.photos/100?random=2" alt="User 2">
+          <div>
+            <h3>Priya Verma</h3>
+            <span>UI/UX Designer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+        <p>
+          "Best service ever! Very clean layout, fast loading pages, and easy navigation.
+          I would definitely use it again."
+        </p>
+
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+
+        <div class="user-info">
+          <img src="https://picsum.photos/100?random=3" alt="User 3">
+          <div>
+            <h3>Rohan Patil</h3>
+            <span>Student</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="testimonial-card">
+        <p>
+          "The responsiveness is perfect. It adapts nicely to all screen sizes.
+          Very useful for learning and projects."
+        </p>
+
+        <div class="stars">⭐⭐⭐⭐</div>
+
+        <div class="user-info">
+          <img src="https://picsum.photos/100?random=4" alt="User 4">
+          <div>
+            <h3>Neha Kulkarni</h3>
+            <span>Frontend Developer</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="testimonial-card">
+        <p>
+          "This is exactly what I needed. The design is professional and the code is clean.
+          I learned Flexbox properly through this."
+        </p>
+
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+
+        <div class="user-info">
+          <img src="https://picsum.photos/100?random=5" alt="User 5">
+          <div>
+            <h3>Aditya More</h3>
+            <span>Software Intern</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="testimonial-card">
+        <p>
+          "Really great layout! The testimonial cards are beautiful and interactive.
+          Perfect for portfolio websites."
+        </p>
+
+        <div class="stars">⭐⭐⭐⭐⭐</div>
+
+        <div class="user-info">
+          <img src="https://picsum.photos/100?random=6" alt="User 6">
+          <div>
+            <h3>Sneha Joshi</h3>
+            <span>Marketing Executive</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>

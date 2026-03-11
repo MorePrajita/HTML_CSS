@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026 Travel Destination Gallery</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: #0077b6;
+      color: white;
+      margin: 0;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      text-align: center;
+      padding: 10px;
+      margin: 0;
+    }
+
+    /* Tablet view (2 columns) */
+    @media (max-width: 900px) {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile view (1 column) */
+    @media (max-width: 600px) {
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Top Travel Destinations 2026</h1>
+
+  <div class="gallery">
+
+    <div class="card">
+      <img src="images/goa.png" alt="Goa">
+      <h3>Goa</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/mahabaleshwar.png" alt="Tokyo">
+      <h3>Mahabaleshwar</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/Qutub-Minar-2-1.png" alt="Dubai">
+      <h3>Qutub Minar</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/sikkim-tourism.png" alt="New York">
+      <h3>Sikkim, India</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/2-vitthala-temple-complex-hampi-karnataka-city-hero.png" alt="Bali">
+      <h3>Vitthala Temple, Hampi</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/Bhutanatha_temple_in_Badami_Karnataka_India-1.png" alt="Switzerland">
+      <h3>Bhutanatha Temple</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/images1.png" alt="Maldives">
+      <h3>Bangalore Palace</h3>
+    </div>
+
+    <div class="card">
+      <img src="images/ladakh.png" alt="Sydney">
+      <h3>Ladakh</h3>
+    </div>
+
+  </div>
+
+</body>
+</html>

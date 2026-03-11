@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Digital Menu</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f3f3;
+    }
+
+    header {
+      text-align: center;
+      padding: clamp(15px, 3vw, 30px);
+      background: #111;
+      color: white;
+      font-size: clamp(20px, 3vw, 35px);
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .menu-card {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 18px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+    }
+
+    /* Menu Header Image */
+    .menu-image img {
+      width: 100%;
+      height: clamp(180px, 30vw, 350px);
+      object-fit: cover;
+      display: block;
+    }
+
+    .menu-content {
+      padding: clamp(15px, 3vw, 35px);
+    }
+
+    .menu-title {
+      text-align: center;
+      font-size: clamp(22px, 4vw, 40px);
+      margin: 0;
+      color: #222;
+    }
+
+    .menu-subtitle {
+      text-align: center;
+      font-size: clamp(14px, 2vw, 18px);
+      color: #666;
+      margin-top: 8px;
+      margin-bottom: 30px;
+    }
+
+    /* Description List Styling */
+    dl {
+      margin: 0;
+      display: grid;
+      gap: clamp(12px, 2vw, 22px);
+    }
+
+    dt {
+      font-size: clamp(16px, 2.5vw, 22px);
+      font-weight: bold;
+      color: #111;
+    }
+
+    dd {
+      margin: 0;
+      font-size: clamp(13px, 2vw, 17px);
+      color: #555;
+      line-height: 1.6;
+      padding-left: 15px;
+      border-left: 4px solid #ff9800;
+    }
+
+    .price {
+      float: right;
+      font-weight: bold;
+      color: #e63946;
+      font-size: clamp(14px, 2vw, 18px);
+    }
+
+    /* Footer Button */
+    .order-btn {
+      margin-top: 30px;
+      width: 100%;
+      padding: clamp(12px, 2vw, 18px);
+      border: none;
+      border-radius: 12px;
+      background: #ff9800;
+      font-size: clamp(16px, 2vw, 20px);
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .order-btn:hover {
+      background: #e68900;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>🍴 The Foodie's Corner Menu</header>
+
+  <div class="menu-card">
+
+    <!-- Menu Image -->
+    <div class="menu-image">
+      <img src="images/restaurant-mural-wallpaper_52683-47493.png" alt="Restaurant Food">
+    </div>
+
+    <!-- Menu Content -->
+    <div class="menu-content">
+
+      <h1 class="menu-title">Today's Special Menu</h1>
+      <p class="menu-subtitle">Fresh • Delicious • Served Hot 🔥</p>
+
+      <!-- Description List Menu -->
+      <dl>
+
+        <dt>Paneer Tikka <span class="price">₹220</span></dt>
+        <dd>
+          Soft paneer cubes grilled with spicy marinade, served with mint chutney.
+        </dd>
+
+        <dt>Veg Burger <span class="price">₹150</span></dt>
+        <dd>
+          Crispy veg patty with cheese, lettuce, and special mayo sauce in a toasted bun.
+        </dd>
+
+        <dt>Margherita Pizza <span class="price">₹299</span></dt>
+        <dd>
+          Classic pizza with mozzarella cheese, tomato sauce, and oregano topping.
+        </dd>
+
+        <dt>Hakka Noodles <span class="price">₹180</span></dt>
+        <dd>
+          Stir-fried noodles with vegetables, soy sauce, and Chinese spices.
+        </dd>
+
+        <dt>Chocolate Shake <span class="price">₹120</span></dt>
+        <dd>
+          Thick chocolate milkshake topped with whipped cream and choco chips.
+        </dd>
+
+      </dl>
+
+      <button class="order-btn">Order Now 🍽️</button>
+
+    </div>
+  </div>
+
+</body>
+</html>

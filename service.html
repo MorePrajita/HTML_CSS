@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Pricing Table</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+      background: #111;
+      color: white;
+    }
+
+    .pricing-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 40px 20px;
+    }
+
+    .card {
+      background: white;
+      width: 300px;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .price {
+      font-size: 32px;
+      font-weight: bold;
+      color: #0077ff;
+      margin: 15px 0;
+    }
+
+    .price span {
+      font-size: 16px;
+      color: gray;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px 0;
+    }
+
+    ul li {
+      padding: 8px 0;
+      border-bottom: 1px solid #ddd;
+      color: #444;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      width: 100%;
+      border: none;
+      border-radius: 10px;
+      background: #0077ff;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #0056c7;
+    }
+
+    /* Highlight Pro Plan */
+    .pro {
+      border: 3px solid #ffb703;
+      transform: scale(1.05);
+    }
+
+    .pro .price {
+      color: #ff8800;
+    }
+
+    .pro button {
+      background: #ffb703;
+      color: black;
+    }
+
+    .pro button:hover {
+      background: #e09f00;
+    }
+
+    /* Mobile View: Stack vertically */
+    @media (max-width: 768px) {
+      .pricing-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .card {
+        width: 90%;
+        max-width: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Service Pricing Plans</h1>
+
+  <div class="pricing-container">
+
+    <!-- Basic Plan -->
+    <div class="card">
+      <h2>Basic</h2>
+      <p class="price">₹499 <span>/month</span></p>
+
+      <ul>
+        <li>1 Website</li>
+        <li>5 GB Storage</li>
+        <li>Email Support</li>
+        <li>Basic Security</li>
+      </ul>
+
+      <button>Select Plan</button>
+    </div>
+
+    <!-- Pro Plan -->
+    <div class="card pro">
+      <h2>Pro</h2>
+      <p class="price">₹999 <span>/month</span></p>
+
+      <ul>
+        <li>5 Websites</li>
+        <li>50 GB Storage</li>
+        <li>Priority Support</li>
+        <li>Advanced Security</li>
+      </ul>
+
+      <button>Select Plan</button>
+    </div>
+
+    <!-- Premium Plan -->
+    <div class="card">
+      <h2>Premium</h2>
+      <p class="price">₹1499 <span>/month</span></p>
+
+      <ul>
+        <li>Unlimited Websites</li>
+        <li>200 GB Storage</li>
+        <li>24/7 Support</li>
+        <li>Premium Security</li>
+      </ul>
+
+      <button>Select Plan</button>
+    </div>
+
+  </div>
+
+</body>
+</html>
